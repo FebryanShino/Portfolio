@@ -1,3 +1,5 @@
+const root = 'https://febryanshino.github.io/portfolio/'
+
 const daysOfWeek = [
   'Sunday',
   'Monday',
@@ -26,7 +28,7 @@ const months = [
 
 
 const setLanguage = async (language) => {
-  const response = await fetch('data/language.json');
+  const response = await fetch(root + 'data/language.json');
   const data = await response.json();
 
   const languageIndicator = document.querySelector('nav > .burger-items > .language > span');
@@ -71,7 +73,7 @@ languageToggler.onclick = async () => {
   const languages = ['en', 'id', 'jp'];
   let index = languages.indexOf(lang);
   let nextIndex = (index + 1) % 3;
-  window.location.href = `./?lang=${languages[nextIndex]}`;
+  window.location.href = root + `/?lang=${languages[nextIndex]}`;
 }
 
 
@@ -81,7 +83,7 @@ setLanguage(lang);
 
 
 const fetchData = async () => {
-  const response = await fetch('/data/render.csv');
+  const response = await fetch(root + 'data/render.csv');
   const data = (await response.text()).split('\n').slice(1);
 
 
