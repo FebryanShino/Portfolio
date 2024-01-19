@@ -26,7 +26,7 @@ const months = [
 
 
 const setLanguage = async (language) => {
-  const response = await fetch('/data/language.json');
+  const response = await fetch('data/language.json');
   const data = await response.json();
 
   const languageIndicator = document.querySelector('nav > .burger-items > .language > span');
