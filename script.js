@@ -71,7 +71,7 @@ languageToggler.onclick = async () => {
   const languages = ['en', 'id', 'jp'];
   let index = languages.indexOf(lang);
   let nextIndex = (index + 1) % 3;
-  window.location.href = `/?lang=${languages[nextIndex]}`;
+  window.location.href = `./?lang=${languages[nextIndex]}`;
 }
 
 
