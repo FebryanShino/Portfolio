@@ -1,0 +1,58 @@
+{
+  "greeting": {
+    "en": "Hi!",
+    "id": "Hai!",
+    "jp": "はじめまして!"
+  },
+  "introduction": {
+    "en": "I Am FebryanShino",
+    "id": "Saya FebryanShino",
+    "jp": "FebryanShinoと申します"
+  },
+  "description": {
+    "en": "A Blender artist with a passion for shaping virtual worlds, a programmer with a dream of creating innovative solutions, a frontend developer weaving captivating web experiences, and a technology enthusiast immersed in boundless possibilities.",
+    "id": "Blender Artist yang memiliki passion untuk membentuk dunia virtual, seorang programmer dengan impian menciptakan solusi inovatif, frontend developer menyulam pengalaman web yang memukau, dan penggemar teknologi yang tenggelam dalam kemungkinan tanpa batas.",
+    "jp": "バーチャルワールドを形作る情熱を持つBlenderアーティスト、革新的なソリューションを作り出すプログラマー、魅力的なウェブ体験を織りなすフロントエンド開発者、そして無限の可能性に没頭するテクノロジーエンスー。"
+  },
+  "works": {
+    "title": {
+      "en": "Works",
+      "id": "Karya",
+      "jp": "作品"
+    },
+    "desc": {
+      "en": "Explore my diverse portfolio featuring Blender art, programming solutions, frontend web interfaces, and compelling illustrations.",
+      "id": "Jelajahi beragam karya menampilkan seni Blender, solusi pemrograman, antarmuka web frontend yang menarik, dan ilustrasi yang memukau.",
+      "jp": "Blenderアート、プログラムソリューション、フロントエンドのウェブインターフェース、そして魅力的なイラストを取り上げた多様なポートフォリオをご覧ください。"
+    }
+  },
+  "blender": {
+    "title": {
+      "en": "Three Dimensional Scenery",
+      "id": "Dunia Tiga Dimensi",
+      "jp": "三次元の風景"
+    },
+    "desc": {
+      "en": "Three Dimensional Scenery is a collection of uniquely immersive landscapes. This body of work combines Blender artistry and technology, bringing to life a passion for shaping virtual worlds. Explore forbidden realms and indulge in visual adventures in a new dimension.",
+      "id": "Dunia Tiga Dimensi adalah kumpulan dunia yang imersif dan unik. Karya ini menggabungkan seni Blender dan teknologi, mewujudkan semangat untuk membentuk dunia virtual. Jelajahi wilayah terlarang dan nikmati petualangan visual di dimensi baru.",
+      "jp": "「三次元の風景」は、立体的で没入感ある独自の風景表現です。ブレンダーアートと技術が融合し、仮想の世界を形作る情熱が具現化された作品群です。立ち入り禁止の領域を探索し、新しい次元での視覚的な冒険をお楽しみください。"
+    },
+    "section": {
+      "mascot": {
+        "en": "Mascot",
+        "id": "Maskot",
+        "jp": "マスコット"
+      },
+      "latest": {
+        "en": "Latest Works",
+        "id": "Karya Terbaru",
+        "jp": "最新の作品"
+      },
+      "renders": {
+        "en": "All Renders",
+        "id": "Semua Render",
+        "jp": "全レンダー"
+      }
+    }
+  }
+}
