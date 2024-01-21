@@ -29,7 +29,7 @@ body[data-theme="dark"] {
 }
 
 body {
-  min-height: 100vw;
+  min-height: 100vh;
   font-family: Playfair, serif;
   background: var(--background);
   --padding-side: clamp(.5rem, 10vw, 15rem);

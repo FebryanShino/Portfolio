@@ -1,0 +1,36 @@
+{
+  "header": {
+    "en": "Contact Us",
+    "id": "Hubungi Kami",
+    "jp": "お問い合わせ"
+  },
+  "form": {
+    "name": {
+      "en": "Full Name",
+      "id": "Nama Lengkap",
+      "jp": "名前"
+    },
+    "email": {
+      "en": "E-mail",
+      "id": "E-mail",
+      "jp": "メール"
+    },
+    "message": {
+      "en": "Message",
+      "id": "Pesan",
+      "jp": "メッセージ"
+    }
+  },
+  "info": {
+    "contact": {
+      "en": "Contact",
+      "id": "Kontak",
+      "jp": "メールでのお問い合わせ"
+    },
+    "location": {
+      "en": ["Based In", "Central Java, Indonesia"],
+      "id": ["Basis di", "Jawa Tengah, Indonesia"],
+      "jp": ["拠点", "ジャワ、インドネシア"]
+    }
+  }
+}

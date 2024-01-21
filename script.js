@@ -1,5 +1,7 @@
 const root = 'https://febryanshino.github.io/portfolio/'
 
+console.log(document.documentElement.scrollHeight)
+
 const daysOfWeek = [
   'Sunday',
   'Monday',
