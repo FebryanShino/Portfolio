@@ -199,11 +199,14 @@ const darkModeToggler = document.querySelector('nav > .burger-items > .dark-mode
 darkModeToggler.onclick = () => {
   const theme = document.body.dataset.theme;
   const icons = document.querySelectorAll('nav > .burger-items > .dark-mode > svg');
+  const themeColor = document.querySelector('meta[name="theme-color"]')
   if (theme == 'light') {
+    themeColor.setAttribute('content', 'black');
     document.body.dataset.theme = 'dark';
     icons[0].classList.add('hidden');
     icons[1].classList.remove('hidden');
   } else {
+    themeColor.setAttribute('content', 'white');
     document.body.dataset.theme = 'light';
     icons[1].classList.add('hidden');
     icons[0].classList.remove('hidden');
