@@ -1,6 +1,4 @@
-const root = 'https://febryanshino.github.io/portfolio/'
-
-console.log(document.documentElement.scrollHeight)
+const root = ''
 
 const daysOfWeek = [
   'Sunday',
@@ -39,16 +37,27 @@ const setLanguage = async (language) => {
   const greeting = document.querySelector('.header > .introduction > h6');
   const intro = document.querySelector('.header > .introduction > h1');
   const introDesc = document.querySelector('.header > .introduction > p');
+  const buttons = document.querySelectorAll('.header > .introduction > .buttons > button');
 
   greeting.textContent = data.greeting[language];
   intro.textContent = data.introduction[language];
   introDesc.textContent = data.description[language];
+  buttons[0].textContent = data.buttons.contact[language];
+  buttons[1].textContent = data.buttons.works[language];
 
 
   const worksTitle = document.querySelector('.works > .head > h1');
   const worksDesc = document.querySelector('.works > .head > p');
   worksTitle.textContent = data.works.title[language];
   worksDesc.textContent = data.works.desc[language];
+
+  worksBlender = document.querySelector('.works > .head > div > button:nth-child(1) > span');
+  worksWebsite = document.querySelector('.works > .head > div > button:nth-child(2) > span');
+  worksIllustration = document.querySelector('.works > .head > div > button:nth-child(3) > span');
+
+  worksBlender.textContent = data.works.categories.blender[language];
+  worksWebsite.textContent = data.works.categories.website[language];
+  worksIllustration.textContent = data.works.categories.illustration[language];
   
 
   const blenderTitle = document.querySelector('.blender > h1');
@@ -199,4 +208,14 @@ darkModeToggler.onclick = () => {
     icons[1].classList.add('hidden');
     icons[0].classList.remove('hidden');
   }
+}
+
+
+
+
+const scrollToWorks = _ => {
+  window.scrollTo({
+    top: document.documentElement.scrollHeight * 24/100,
+    behavior: 'smooth'
+  });
 }

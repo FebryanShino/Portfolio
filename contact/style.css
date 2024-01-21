@@ -147,8 +147,8 @@ nav>.burger-items>button:nth-child(2) {
   position: absolute;
   inset: 0;
   margin: auto;
-  height: 38rem;
-  width: 85%;
+  height: 80%;
+  width: 38rem;
 }
 
 
@@ -162,7 +162,7 @@ nav>.burger-items>button:nth-child(2) {
 
 .contact > .content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   height: 100%;
   width: 100%;
   border: .1rem solid var(--text);
@@ -244,6 +244,20 @@ nav>.burger-items>button:nth-child(2) {
 
 .contact > .content > .other > .socials > a > svg path {
   stroke: var(--text);
+}
+
+@media only screen and (max-width: 37.5rem) {
+  .contact {
+    height: 38rem;
+    width: 85%;
+  }
+  
+  .contact > .content {
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+
 }
 
 

@@ -1,9 +1,9 @@
-const root = '/portfolio/'
+const root = ''
 
 
 
 const setLanguage = async (language) => {
-  const response = await fetch(root + 'contact/language.json');
+  const response = await fetch(root + 'language.json');
   const data = await response.json();
 
   const languageIndicator = document.querySelector('nav > .burger-items > .language > span');
@@ -84,4 +84,13 @@ darkModeToggler.onclick = () => {
     icons[1].classList.add('hidden');
     icons[0].classList.remove('hidden');
   }
+}
+
+
+
+const contactForm = document.querySelector('.contact > .content > form');
+
+contactForm.onsubmit = async (e) => {
+  e.preventDefault();
+  alert('Feature not yet implemented')
 }

@@ -29,6 +29,7 @@ body[data-theme="dark"] {
 }
 
 body {
+  width: 100vw;
   min-height: 100vh;
   font-family: Playfair, serif;
   background: var(--background);
@@ -132,8 +133,8 @@ nav>.burger-items>button:nth-child(2) {
 
 
 .header {
-  width: 100%;
-  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
   min-height: 100vh;
   display: flex;
   color: var(--text);
@@ -153,7 +154,7 @@ nav>.burger-items>button:nth-child(2) {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 var(--padding-side);
+  padding: 1rem var(--padding-side);
   gap: 2rem;
 }
 
@@ -194,7 +195,6 @@ nav>.burger-items>button:nth-child(2) {
 
 .header>.introduction>.buttons>button {
   cursor: pointer;
-  border: none;
   border-radius: .2rem;
   background: none;
   height: 100%;
@@ -205,10 +205,15 @@ nav>.burger-items>button:nth-child(2) {
   font-weight: 500;
 }
 
+.header>.introduction>.buttons>button:first-child {
+  background: var(--accent);
+  color: var(--background);
+}
+
 
 .header>.image-profile {
   aspect-ratio: 1/1;
-  height: 100%;
+  width: 100%;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -302,11 +307,12 @@ nav>.burger-items>button:nth-child(2) {
   height: auto;
   display: flex;
   justify-content: center;
+  gap: 1rem;
 }
 
 .works>.head>div>button {
   cursor: pointer;
-  height: 6rem;
+  height: 5rem;
   aspect-ratio: 1/1;
   background: none;
   display: flex;
@@ -315,23 +321,25 @@ nav>.burger-items>button:nth-child(2) {
   align-items: center;
   color: var(--text);
   font-weight: 500;
-  border: none;
   gap: .3rem;
+  border: .06rem solid var(--text);
+  border-radius: .5rem;
+  padding: .5rem;
 }
 
 .works>.head>div>button>svg {
-  border: .1rem solid var(--text);
-  border-radius: .5rem;
   aspect-ratio: 1/1;
-  padding: .5rem;
-  height: 100%;
-  fill: var(--text);
+  width: 80%;
+}
+.works>.head>div>button>svg:nth-child(2) {
+  padding: 1rem;
 }
 
-.works>.head>div>button>svg>g {
-  fill: var(--text);
+.works>.head>div>button>span {
+  font-family: Playfair, serif;
+  font-size: .6rem;
+  font-weight: 400;
 }
-
 
 .works>.blender {
   margin-top: 5rem;
@@ -340,9 +348,7 @@ nav>.burger-items>button:nth-child(2) {
   height: auto;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(135deg,
-      var(--background) 70%,
-      var(--secondary));
+  background: var(--background);
   overflow-x: hidden;
 }
 
@@ -412,6 +418,9 @@ nav>.burger-items>button:nth-child(2) {
   width: clamp(50%, 100vh, 105%);
   aspect-ratio: 1/1;
   position: relative;
+  align-self: center;
+  display: flex;
+  justify-content: center;
 }
 
 .works>.blender>.latest>.latest-blender-work>div {
@@ -549,7 +558,6 @@ nav>.burger-items>button:nth-child(2) {
   inset: 0;
   margin: auto;
   display: flex;
-  flex-direction: column;
 }
 
 .works > .blender > .all-works > .render-modal-wrapper > .render-modal > .close-modal {
@@ -563,13 +571,10 @@ nav>.burger-items>button:nth-child(2) {
   font-size: 1.3rem;
 }
 
-.works > .blender > .all-works > .render-modal-wrapper > .render-modal > .close-modal span {
-}
-
 
 .works > .blender > .all-works > .render-modal-wrapper > .render-modal > .img {
   width: 100%;
-  height: 80%;
+  height: 100%;
   background-size: cover;
   background-position: center;
   background-image: url(https://pbs.twimg.com/media/GD4fHkBbcAAo2fW?format=jpg&name=large);
@@ -718,6 +723,7 @@ nav>.burger-items>button:nth-child(2) {
   .header {
     flex-direction: column-reverse;
     height: auto;
+    width: 100%;
   }
 
   .header>.socials {
@@ -734,6 +740,15 @@ nav>.burger-items>button:nth-child(2) {
   .header>.image-profile {
     width: 100%;
     aspect-ratio: 1/1;
+  }
+
+
+  .works > .blender > .all-works > .render-modal-wrapper > .render-modal {
+    flex-direction: column;
+  }
+
+  .works > .blender > .all-works > .render-modal-wrapper > .render-modal > .img {
+    height: 80%;
   }
 }
 
